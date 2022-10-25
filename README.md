@@ -1,16 +1,11 @@
-# random_user_method_channel
+# Random User with Method Channeling
 
-Flutter project to demonstrate random user profiling.
+Random User is an application that allows users to see a list of unlimited users. 
+The application uses the Random User API which is for free.
 
-## Getting Started
+This is a basic Flutter app that demonstrates how to use Flutter Method Channeling for API Call. It
+uses Free Random User API for the network resource.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Features
+1. All the functionalities will be done on specific platform, Flutter will just render the UI.
+2. Will make use of Threading on the specific platforms to improve perceived performance of the app.
