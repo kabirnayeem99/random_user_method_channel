@@ -14,6 +14,8 @@ dependencies:
 
   cupertino_icons: ^1.0.2
   cached_network_image: ^3.2.2
+  loadmore: ^2.0.1
+  flutter_screenutil: ^5.5.4
   get: ^4.6.5
 
 dev_dependencies:

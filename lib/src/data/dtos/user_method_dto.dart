@@ -33,4 +33,9 @@ class UserMethodDto {
     data['phone'] = phone;
     return data;
   }
+
+  @override
+  String toString() {
+    return 'UserMethodDto{name: $name}';
+  }
 }

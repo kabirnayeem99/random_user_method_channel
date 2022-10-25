@@ -5,13 +5,13 @@ import 'package:random_user_method_channel/src/domain/repositories/user_reposito
 class UserRepositoryImpl extends UserRepository {
   final MethodDataSource _methodDataSource = MethodDataSource();
 
-  List<User> _inMemoryUsers = List.empty();
+  final List<User> _inMemoryUsers = List.empty(growable: true);
 
   @override
   Stream<List<User>> getUsers() async* {
-    yield _inMemoryUsers;
+    if (_inMemoryUsers.isNotEmpty) yield _inMemoryUsers;
     final users = await _methodDataSource.getUsers();
-    _inMemoryUsers = users;
-    yield users;
+    _inMemoryUsers.addAll(users);
+    if (_inMemoryUsers.isNotEmpty) yield _inMemoryUsers;
   }
 }
