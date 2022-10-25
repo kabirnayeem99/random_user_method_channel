@@ -28,6 +28,11 @@ class UserApiResponseDto {
     }
     return data;
   }
+
+  @override
+  String toString() {
+    return 'UserApiResponseDto{results: $results, info: $info}';
+  }
 }
 
 class Results {
@@ -106,6 +111,11 @@ class Results {
     data['nat'] = nat;
     return data;
   }
+
+  @override
+  String toString() {
+    return 'Results{gender: $gender, name: $name, location: $location, email: $email, login: $login, dob: $dob, registered: $registered, phone: $phone, cell: $cell, id: $id, picture: $picture, nat: $nat}';
+  }
 }
 
 class Name {
@@ -127,6 +137,11 @@ class Name {
     data['first'] = first;
     data['last'] = last;
     return data;
+  }
+
+  @override
+  String toString() {
+    return 'Name{first: $first, last: $last}';
   }
 }
 

@@ -1,4 +1,6 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:loadmore/loadmore.dart';
 import 'package:random_user_method_channel/src/domain/entities/user_entity.dart';
@@ -17,12 +19,10 @@ class UserListBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
-    debugPrint(size.toString());
     return LoadMore(
       onLoadMore: () async {
         if (userList.length % 10 == 0) {
-          await Future.delayed((userList.length / 10 * 1000).milliseconds);
+          await Future.delayed((userList.length / 10 * 560).milliseconds);
           Get.find<UserListController>().fetchUserList();
           return true;
         } else {
@@ -30,17 +30,36 @@ class UserListBody extends StatelessWidget {
         }
       },
       isFinish: userList.length >= 60,
-      textBuilder: (status) => status == LoadMoreStatus.loading
-          ? "Loading more users..."
-          : "No more users",
+      textBuilder: (status) => status == LoadMoreStatus.loading ? "" : "end.",
       child: ListView.builder(
         itemBuilder: (context, position) {
           final user = userList[position];
-          return ListTile(
-            key: Key(user.imageUrl),
-            leading: UserAvatarNetworkImage(imageUrl: user.imageUrl),
-            title: Text(user.name),
-            subtitle: Text(user.fullAddress),
+          return SlideInLeft(
+            duration: ((position % 10) * 73).milliseconds,
+            child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 12.sp),
+              child: Card(
+                color: Theme.of(context).primaryColor.withAlpha(60),
+                elevation: 1.sp,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12.sp)),
+                child: ListTile(
+                  contentPadding: EdgeInsets.all(12.sp),
+                  key: Key(user.imageUrl),
+                  leading: UserAvatarNetworkImage(imageUrl: user.imageUrl),
+                  title: Text(user.name,
+                      style: TextStyle(
+                        fontSize: 16.sp,
+                        color: Colors.white,
+                      )),
+                  subtitle: Text(user.fullAddress,
+                      style: TextStyle(
+                        fontSize: 14.sp,
+                        color: Colors.white,
+                      )),
+                ),
+              ),
+            ),
           );
         },
         itemCount: userList.length,

@@ -2,10 +2,24 @@
   <library name="Dart Packages" type="DartPackagesLibraryType">
     <properties>
       <option name="packageNameToDirsMap">
+        <entry key="animate_do">
+          <value>
+            <list>
+              <option value="$USER_HOME$/.local/development/flutter/.pub-cache/hosted/pub.dartlang.org/animate_do-2.1.0/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="async">
           <value>
             <list>
               <option value="$USER_HOME$/.local/development/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.9.0/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="auto_animated">
+          <value>
+            <list>
+              <option value="$USER_HOME$/.local/development/flutter/.pub-cache/hosted/pub.dartlang.org/auto_animated-3.1.0/lib" />
             </list>
           </value>
         </entry>
@@ -296,6 +310,13 @@
             </list>
           </value>
         </entry>
+        <entry key="shaky_animated_listview">
+          <value>
+            <list>
+              <option value="$USER_HOME$/.local/development/flutter/.pub-cache/hosted/pub.dartlang.org/shaky_animated_listview-0.0.5/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="sky_engine">
           <value>
             <list>
@@ -387,6 +408,13 @@
             </list>
           </value>
         </entry>
+        <entry key="visibility_detector">
+          <value>
+            <list>
+              <option value="$USER_HOME$/.local/development/flutter/.pub-cache/hosted/pub.dartlang.org/visibility_detector-0.3.3/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="win32">
           <value>
             <list>
@@ -404,7 +432,9 @@
       </option>
     </properties>
     <CLASSES>
+      <root url="file://$USER_HOME$/.local/development/flutter/.pub-cache/hosted/pub.dartlang.org/animate_do-2.1.0/lib" />
       <root url="file://$USER_HOME$/.local/development/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.9.0/lib" />
+      <root url="file://$USER_HOME$/.local/development/flutter/.pub-cache/hosted/pub.dartlang.org/auto_animated-3.1.0/lib" />
       <root url="file://$USER_HOME$/.local/development/flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0/lib" />
       <root url="file://$USER_HOME$/.local/development/flutter/.pub-cache/hosted/pub.dartlang.org/cached_network_image-3.2.2/lib" />
       <root url="file://$USER_HOME$/.local/development/flutter/.pub-cache/hosted/pub.dartlang.org/cached_network_image_platform_interface-2.0.0/lib" />
@@ -444,6 +474,7 @@
       <root url="file://$USER_HOME$/.local/development/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-2.1.3/lib" />
       <root url="file://$USER_HOME$/.local/development/flutter/.pub-cache/hosted/pub.dartlang.org/process-4.2.4/lib" />
       <root url="file://$USER_HOME$/.local/development/flutter/.pub-cache/hosted/pub.dartlang.org/rxdart-0.27.5/lib" />
+      <root url="file://$USER_HOME$/.local/development/flutter/.pub-cache/hosted/pub.dartlang.org/shaky_animated_listview-0.0.5/lib" />
       <root url="file://$USER_HOME$/.local/development/flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.9.0/lib" />
       <root url="file://$USER_HOME$/.local/development/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite-2.1.0+1/lib" />
       <root url="file://$USER_HOME$/.local/development/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite_common-2.3.0/lib" />
@@ -456,6 +487,7 @@
       <root url="file://$USER_HOME$/.local/development/flutter/.pub-cache/hosted/pub.dartlang.org/typed_data-1.3.1/lib" />
       <root url="file://$USER_HOME$/.local/development/flutter/.pub-cache/hosted/pub.dartlang.org/uuid-3.0.6/lib" />
       <root url="file://$USER_HOME$/.local/development/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.1.2/lib" />
+      <root url="file://$USER_HOME$/.local/development/flutter/.pub-cache/hosted/pub.dartlang.org/visibility_detector-0.3.3/lib" />
       <root url="file://$USER_HOME$/.local/development/flutter/.pub-cache/hosted/pub.dartlang.org/win32-3.0.1/lib" />
       <root url="file://$USER_HOME$/.local/development/flutter/.pub-cache/hosted/pub.dartlang.org/xdg_directories-0.2.0+2/lib" />
       <root url="file://$USER_HOME$/.local/development/flutter/bin/cache/pkg/sky_engine/lib" />

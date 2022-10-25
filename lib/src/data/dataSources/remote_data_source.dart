@@ -10,6 +10,7 @@ class RemoteDataSource {
 
   Future<List<User>> getUsers() async {
     final UserApiResponseDto usersDto = await _apiService.getRandomUsers();
+    debugPrint(usersDto.toString());
     final users = await compute(convertApiDtoToUsers, usersDto);
     return users;
   }
@@ -21,7 +22,9 @@ List<User> convertApiDtoToUsers(UserApiResponseDto usersDto) {
                 name: "${dto.name?.first ?? ""} ${dto.name?.last ?? ""}",
                 email: dto.email ?? "",
                 phone: dto.phone ?? "",
-                imageUrl: dto.picture?.large ?? "",
+                imageUrl: dto.picture?.large?.contains("women") == true
+                    ? ""
+                    : dto.picture?.large ?? "",
                 fullAddress: dto.location?.city ?? "",
                 gender: dto.gender == "male" ? Gender.male : Gender.female,
               ))

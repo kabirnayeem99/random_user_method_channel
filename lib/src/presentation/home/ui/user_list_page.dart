@@ -10,6 +10,7 @@ class UserListPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Theme.of(context).primaryColor.withAlpha(70),
       body: GetX(
         init: Get.put(UserListController()),
         builder: (controller) {
