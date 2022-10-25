@@ -21,9 +21,13 @@ class UserListBody extends StatelessWidget {
     debugPrint(size.toString());
     return LoadMore(
       onLoadMore: () async {
-        await Future.delayed((userList.length / 10 * 1000).milliseconds);
-        Get.find<UserListController>().fetchUserList();
-        return true;
+        if (userList.length % 10 == 0) {
+          await Future.delayed((userList.length / 10 * 1000).milliseconds);
+          Get.find<UserListController>().fetchUserList();
+          return true;
+        } else {
+          return false;
+        }
       },
       isFinish: userList.length >= 60,
       textBuilder: (status) => status == LoadMoreStatus.loading

@@ -15,7 +15,6 @@ class MethodDataSource {
         await _platformMethodChannel.invokeMethod("get_user_task");
     final userMap = await compute(jsonDecodeList, result);
     final userDtos = userMap.map((e) => UserMethodDto.fromJson(e)).toList();
-    debugPrint(userDtos.toString());
     final users = await compute(convertToUsers, userDtos);
     return users;
   }

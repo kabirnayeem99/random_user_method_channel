@@ -16,10 +16,8 @@ class UserListController extends GetxController {
   Future<void> fetchUserList() async {
     loading();
     userRepository.getUsers().listen((users) {
-      if (users.isNotEmpty) {
-        uiState.value = uiState.value.copyWith(users: users);
-        unloading();
-      }
+      uiState.value = uiState.value.copyWith(users: users);
+      unloading();
     });
   }
 

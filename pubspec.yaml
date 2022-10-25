@@ -16,6 +16,7 @@ dependencies:
   cached_network_image: ^3.2.2
   loadmore: ^2.0.1
   flutter_screenutil: ^5.5.4
+  dio:
   get: ^4.6.5
 
 dev_dependencies:
