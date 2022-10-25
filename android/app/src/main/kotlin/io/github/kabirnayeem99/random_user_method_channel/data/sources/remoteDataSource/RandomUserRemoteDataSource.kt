@@ -19,7 +19,7 @@ class RandomUserRemoteDataSource(private val apiService: RandomUserRemoteApiServ
                 phone = it?.phone ?: "",
                 fullAddress = it?.location?.city ?: "",
                 gender = if (it?.gender == "male") Gender.Male else Gender.Female,
-                imageUrl = if (it?.picture?.large?.contains("woman") == true) "" else it?.picture?.large
+                imageUrl = if (it?.picture?.large?.contains("women") == true) "" else it?.picture?.large
                     ?: ""
             )
         } ?: emptyList()

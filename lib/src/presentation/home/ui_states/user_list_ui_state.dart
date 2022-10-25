@@ -5,8 +5,8 @@ class UserListUiState {
   List<User> users;
 
   UserListUiState({
-    required this.isLoading,
-    required this.users,
+    this.isLoading = false,
+    this.users = const [],
   });
 
   UserListUiState copyWith({
